@@ -1,6 +1,7 @@
 use std::fs;
 use std::fs::File;
 use std::io::BufReader;
+use std::time::Duration;
 use reqwest::ClientBuilder;
 use serde_json::Value;
 use sysinfo::System;
@@ -58,6 +59,7 @@ async fn in_game()-> Result<(), Box<dyn std::error::Error>> {
                         }
                     }
                 }
+                tokio::time::sleep(Duration::from_secs(2)).await;
             }
             Err(e) => {
                 println!("{}", e);
@@ -80,6 +82,7 @@ async fn check() {
             }
 
         }
+        tokio::time::sleep(Duration::from_secs(5)).await;
 
 
 
