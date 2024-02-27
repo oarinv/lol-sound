@@ -678,6 +678,18 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "b5e6163cb8c49088c2c36f57875e58ccd8c87c7427f7fbd50ea6710b2f3f2e8f"
 
 [[package]]
+name = "lol-sound"
+version = "0.1.0"
+dependencies = [
+ "rand",
+ "reqwest",
+ "rodio",
+ "serde_json",
+ "sysinfo",
+ "tokio",
+]
+
+[[package]]
 name = "mach2"
 version = "0.4.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -1622,18 +1634,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "a56d1686db2308d901306f92a263857ef59ea39678a5458e7cb17f01415101f5"
 dependencies = [
  "tinyvec",
-]
-
-[[package]]
-name = "untitled"
-version = "0.1.0"
-dependencies = [
- "rand",
- "reqwest",
- "rodio",
- "serde_json",
- "sysinfo",
- "tokio",
 ]
 
 [[package]]
