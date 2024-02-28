@@ -12,3 +12,5 @@ rand = "0.8.5"
 sysinfo = "0.30.5"
 tokio = { version = "1.36.0", features = ["full"] }
 rodio = "0.17.3"
+rust-ini = "0.20.0"
+
